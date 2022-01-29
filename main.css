@@ -1,0 +1,127 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: url('./images/pattern-background-desktop.svg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+@media (max-width: 576px){
+    body{
+        background: url('./images/pattern-background-mobile.svg') no-repeat center center fixed; 
+        background-size: cover;
+    }
+}
+
+.card {
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    background-color: white;
+    padding-bottom: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sub-card {
+    padding: 1.5rem;
+}
+
+.card h2 {
+    /* display: inline-block; */
+    text-align: center;
+    font-weight: 900;
+}
+
+.card p {
+    color: gray;
+    text-align: center;
+    font-size: 16px;
+}
+
+.annual-plan {
+    height: 50px;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: hsl(225, 100%, 98%);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 16px;
+    margin-top: 1.5rem;
+}
+
+.annual-plan img {
+    height: 50px;
+    width: 50px;
+    /* display: inline-block; */
+}
+
+.annual-plan .paragraph {
+    display: inline-block;
+    margin-top: 4px;
+    color: gray;
+    font-weight: 500;
+}
+
+.annual-plan .paragraph h4 {
+    margin: 0;
+    color: black;
+    font-weight: 900;
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    line-height: 50px;
+}
+
+.change a:hover {
+    text-decoration: none;
+    color: rgb(118,108,241);
+}
+
+.sub-card button {
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.sub-card button:hover{
+    cursor: pointer;
+}
+
+.btn-payment {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    height: 3rem;
+    box-shadow: 0px 25px 25px rgba(56,42,225, 0.16);
+}
+
+.btn-payment:hover {
+    background-color: rgb(118,108,241);
+}
+
+.btn-cancel {
+    height: 1rem;
+    background-color: transparent;
+    color: gray
+}
+
+.btn-cancel:hover {
+    color: black;
+    font-weight: 700;
+    
+}
